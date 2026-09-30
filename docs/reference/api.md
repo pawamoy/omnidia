@@ -5,3 +5,13 @@ hide:
 ---
 
 # ::: omnidia
+
+# ::: omnidia.app
+
+# ::: omnidia.db
+
+# ::: omnidia.exclusion
+
+# ::: omnidia.scanner
+
+# ::: omnidia.watcher

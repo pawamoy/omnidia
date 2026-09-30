@@ -102,7 +102,7 @@ def _fixture_internal_objects(internal_api: griffe.Module) -> list[griffe.Object
 
 @pytest.fixture(name="public_objects", scope="module")
 def _fixture_public_objects(public_api: griffe.Module) -> list[griffe.Object | griffe.Alias]:
-    return list(_yield_public_objects(public_api, modulelevel=False, inherited=True, special=True))
+    return list(_yield_public_objects(public_api, modules=True, modulelevel=False, inherited=True, special=True))
 
 
 @pytest.fixture(name="inventory", scope="module")
