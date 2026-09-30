@@ -1,14 +1,13 @@
-# Changes here will be overwritten by Copier
-_commit: 0.1.0
+# Changes here will be overwritten by Copier.
+_commit: 1.15.3
 _src_path: gh:pawamoy/copier-uv
-author_email: pawamoy@pm.me
+author_email: dev@pawamoy.fr
 author_fullname: Timothée Mazzucotelli
 author_username: pawamoy
 copyright_date: '2021'
 copyright_holder: Timothée Mazzucotelli
-copyright_holder_email: pawamoy@pm.me
-copyright_license: ISC License
-insiders: false
+copyright_holder_email: dev@pawamoy.fr
+copyright_license: ISC
 project_description: File (and abstract object) manager using a graph database and
     a web interface.
 project_name: Omnidia
@@ -18,3 +17,4 @@ python_package_import_name: omnidia
 repository_name: omnidia
 repository_namespace: pawamoy
 repository_provider: github.com
+

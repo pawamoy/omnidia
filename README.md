@@ -1,8 +1,9 @@
 # Omnidia
 
 [![ci](https://github.com/pawamoy/omnidia/workflows/ci/badge.svg)](https://github.com/pawamoy/omnidia/actions?query=workflow%3Aci)
-[![documentation](https://img.shields.io/badge/docs-mkdocs%20material-blue.svg?style=flat)](https://pawamoy.github.io/omnidia/)
+[![documentation](https://img.shields.io/badge/docs-zensical-FF9100.svg?style=flat)](https://pawamoy.github.io/omnidia/)
 [![pypi version](https://img.shields.io/pypi/v/omnidia.svg)](https://pypi.org/project/omnidia/)
+[![gitter](https://img.shields.io/badge/matrix-chat-4DB798.svg?style=flat)](https://app.gitter.im/#/room/#omnidia:gitter.im)
 
 File (and abstract object) manager using a graph database and a web interface.
 
@@ -45,15 +46,17 @@ with Neo4j's web browser at [localhost:7474](localhost:7474).
 
 ## Installation
 
-With `pip`:
-
 ```bash
 pip install omnidia
 ```
 
-With [`pipx`](https://github.com/pipxproject/pipx):
+With [`uv`](https://docs.astral.sh/uv/):
 
 ```bash
-python3.8 -m pip install --user pipx
-pipx install omnidia
+uv tool install omnidia
 ```
+
+## Sponsors
+
+<!-- sponsors-start -->
+<!-- sponsors-end -->
