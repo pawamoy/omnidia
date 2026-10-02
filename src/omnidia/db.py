@@ -57,7 +57,7 @@ class Neo4jBolt:
             try:
                 self.driver = GraphDatabase.driver(url, auth=(user, password))
                 """Bolt driver used to create database sessions."""
-            except Exception:  # noqa: PERF203
+            except Exception:
                 if retry_wait == RETRY_WAITS[-1]:
                     raise
                 # print("WARNING: retrying to Init DB; error:")
@@ -77,7 +77,7 @@ class Neo4jBolt:
         while True:
             try:
                 res = await self.loop.run_in_executor(self.executor, lambda: next(iterator))
-            except StopIteration:  # noqa: PERF203
+            except StopIteration:
                 break
             else:
                 yield dict(res)
@@ -87,7 +87,7 @@ class Neo4jBolt:
         for retry_wait in RETRY_WAITS:
             try:
                 session, iterator = await self.fetch_start(query)
-            except (BrokenPipeError, ServiceUnavailable):  # noqa: PERF203
+            except (BrokenPipeError, ServiceUnavailable):
                 if retry_wait == RETRY_WAITS[-1]:
                     raise
                 await asyncio.sleep(retry_wait)
